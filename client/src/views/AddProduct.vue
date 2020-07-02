@@ -104,7 +104,7 @@ export default {
       console.log("masukadd");
       axios({
         method: "POST",
-        url: "http://localhost:3000/products",
+        url: "https://e-ecom.herokuapp.com/products",
         headers: {
           access_token: localStorage.access_token,
           role: localStorage.role

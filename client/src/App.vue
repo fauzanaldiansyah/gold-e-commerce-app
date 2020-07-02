@@ -24,13 +24,12 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: whitesmoke;
-  background-color: yellowgreen;
-  /* background: url("https://steamcdn-a.akamaihd.net/steamcommunity/public/images/items/556960/b6169958958610f1485f81872ca7448fe2bd66e7.jpg")
+  background: url("https://steamcdn-a.akamaihd.net/steamcommunity/public/images/items/556960/b6169958958610f1485f81872ca7448fe2bd66e7.jpg")
     no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
-  -o-background-size: cover; */
+  -o-background-size: cover;
 }
 
 #nav {

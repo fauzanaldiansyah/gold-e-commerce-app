@@ -120,7 +120,7 @@ export default {
       console.log(id, '<<<payload')
       axios({
         method: "GET",
-        url: `http://localhost:3000/products/${id}`,
+        url: `https://e-ecom.herokuapp.com/products/${id}`,
         headers: {access_token : localStorage.access_token}
       })
         .then(res => {
@@ -144,7 +144,7 @@ export default {
       console.log("ngedit", id);
       axios({
         method: "PUT",
-        url: `http://localhost:3000/products/${id}`,
+        url: `https://e-ecom.herokuapp.com/products/${id}`,
         headers: {
           access_token: localStorage.access_token,
           role: localStorage.role

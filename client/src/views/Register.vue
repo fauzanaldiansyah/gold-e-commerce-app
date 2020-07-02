@@ -59,7 +59,7 @@ export default {
       console.log("iniregister")
       axios({
         method: "POST",
-        url: "http://localhost:3000/users/register",
+        url: "https://e-ecom.herokuapp.com/users/register",
         data: {
           email: this.emailRegister,
           password: this.passwordRegister

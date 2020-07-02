@@ -32,7 +32,7 @@ export default new Vuex.Store({
       console.log('masuk')
       await axios({
         method: "GET",
-        url: "http://localhost:3000/products"
+        url: "https://e-ecom.herokuapp.com//products"
       })
         .then(res => {
           // console.log(res);
@@ -51,7 +51,7 @@ export default new Vuex.Store({
     //   console.log(payload, '<<<payload')
     //   axios({
     //     method: "GET",
-    //     url: `http://localhost:3000/products/${payload}`,
+    //     url: `https://e-ecom.herokuapp.com/products/${payload}`,
     //     headers: {access_token : localStorage.access_token}
     //   })
     //     .then(res => {

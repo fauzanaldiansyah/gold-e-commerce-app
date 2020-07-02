@@ -68,7 +68,7 @@ export default {
       console.log(id, "<<<payload");
       axios({
         method: "GET",
-        url: `http://localhost:3000/products/${id}`,
+        url: `https://e-ecom.herokuapp.com/products/${id}`,
         headers: { access_token: localStorage.access_token }
       })
         .then(res => {
@@ -91,7 +91,7 @@ export default {
       console.log("masukdelete");
       axios({
         method: "DELETE",
-        url: `http://localhost:3000/products/${id}`,
+        url: `https://e-ecom.herokuapp.com/products/${id}`,
         headers: {
           access_token: localStorage.access_token,
           role: localStorage.role
@@ -120,7 +120,7 @@ export default {
       console.log("masukkecart");
       axios({
         method: "POST",
-        url: "http://localhost:3000/carts/add",
+        url: "https://e-ecom.herokuapp.com/carts/add",
         data: { productId: id },
         headers: {
           access_token: localStorage.access_token

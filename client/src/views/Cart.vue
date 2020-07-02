@@ -73,7 +73,7 @@ export default {
     getCart() {
       axios({
         method: "GET",
-        url: `http://localhost:3000/carts/find`,
+        url: `https://e-ecom.herokuapp.com/carts/find`,
         headers: {
           access_token: localStorage.access_token
         }
@@ -89,7 +89,7 @@ export default {
     toDelete(id) {
       axios({
         method: "DELETE",
-        url: `http://localhost:3000/carts/${id}`,
+        url: `https://e-ecom.herokuapp.com/carts/${id}`,
         headers: {
           access_token: localStorage.access_token,
           role: localStorage.role
@@ -107,7 +107,7 @@ export default {
       console.log("masukcheckout");
       axios({
         method: "POST",
-        url: `http://localhost:3000/carts/checkout`,
+        url: `https://e-ecom.herokuapp.com/carts/checkout`,
         headers: {
           access_token: localStorage.access_token
         }
